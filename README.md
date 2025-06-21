@@ -1,7 +1,17 @@
 # image-captioning-and-segmentation
 
 ## 📁 Dataset Overview
-COCO Image Captioning Dataset (from Kaggle)
-Contains: Images + captions (in JSON)
-Format: Similar to MS COCO official 2014 structure
-Does not have segmentation masks; Member 2 must link with official COCO segmentation annotations (or generate using pre-trained models).
+### JSON files covering splits for:
+
+MS COCO (2014 subset) <br>
+Flickr8k <br>
+Flickr30k 
+
+### Each JSON contains:
+### images: with fields like:
+filename — path to the image <br>
+split — labeled as "train", "val", "test" (or "restval") <br>
+sentences — an array of caption objects: <br>
+tokens: list of lowercased caption words <br>
+raw: full caption string <br>
+image and sentence IDs 
